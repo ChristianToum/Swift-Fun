@@ -10,9 +10,25 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet weak var myLabel: UILabel!
+    
+    
+    @IBAction func buttonTapped(_ sender: Any) {
+        
+        view.backgroundColor = UIColor.red
+        
+        myLabel.text = "Nick is cool"
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
