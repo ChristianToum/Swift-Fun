@@ -11,15 +11,6 @@ import UIKit
 class ViewController: UIViewController {
 
     
-    @IBOutlet weak var myLabel: UILabel!
-    
-    
-    @IBAction func buttonTapped(_ sender: Any) {
-        
-        view.backgroundColor = UIColor.red
-        
-        myLabel.text = "Nick is cool"
-    }
     
     
     
@@ -31,10 +22,7 @@ class ViewController: UIViewController {
         
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    
-    }
+
 
 
 }
