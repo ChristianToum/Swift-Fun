@@ -9,19 +9,28 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var myLabel: UILabel!
+    @IBAction func myButton(_ sender: Any) {
+        
+        myLabel.text = "STOP!"
+        
+        view.backgroundColor = UIColor.red
+        
+    }
     
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+       
         
+    
         
         
     }
 
+    
 
 
 

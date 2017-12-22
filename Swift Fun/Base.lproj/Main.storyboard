@@ -17,12 +17,47 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqk-7j-fqs">
+                                <rect key="frame" x="0.0" y="30" width="414" height="64.666666666666671"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Traveller's App">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="0.22569247358442512" green="1" blue="0.89511217568549584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="55" name="Arial-Black"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POB-M1-LeS">
+                                <rect key="frame" x="105.66666666666669" y="138" width="203" height="30"/>
+                                <state key="normal" title="Click here to change screens!"/>
+                                <connections>
+                                    <action selector="myButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rk1-KC-uLg"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eqk-7j-fqs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dse-eX-iuZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eqk-7j-fqs" secondAttribute="trailing" id="iem-NO-Yq9"/>
+                            <constraint firstItem="eqk-7j-fqs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="jnj-jA-mR7"/>
+                            <constraint firstItem="POB-M1-LeS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pcx-fm-h5r"/>
+                            <constraint firstItem="POB-M1-LeS" firstAttribute="top" secondItem="eqk-7j-fqs" secondAttribute="bottom" constant="43.333333333333329" id="sXB-cC-shD"/>
+                            <constraint firstItem="eqk-7j-fqs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zE1-7L-aFZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="myLabel" destination="eqk-7j-fqs" id="Uw2-Iq-cAu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="118.84057971014494" y="120.65217391304348"/>
         </scene>
     </scenes>
 </document>
